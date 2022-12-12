@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links Joelma Viana</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <img src="images/joelma_viana_avatar_cropped.jpeg" alt="Avatar de uma mulher de cabelos escuros.">
+        <h1>Joelma Viana</h1>
+        <p>Consultora Natura</p>
+        <ul>
+            <li>
+                <a href="https://www.facebook.com/joelma.vianna.3152?mibextid=LQQJ4d"
+                    target="_blank">Facebook</a>
+            </li>
+            <li>
+                <a href="https://instagram.com/vianna.joelma?igshid=MDM4ZDc5MmU=" target="_blank">Instagram</a>
+            </li>
+            <li>
+                <a href="https://web.whatsapp.com/send?phone=5591984445966" target="_blank">WhatsApp</a>
+            </li>
+            <li>
+                <a href="mailto:joelencruz@gmail.com">E-mail</a>
+            </li>
+
+            <!-- Input texto -->
+            <input type="text" value="91984445966" id="texto-usuario" />
+
+            <!-- Botão que usaremos para copiar -->
+            <button onclick="copiarTexto()">Copiar pix!</button>
+
+            <script type="text/javascript">
+            function copiarTexto() {
+                /* Selecionamos por ID o nosso input */
+                var textoCopiado = document.getElementById("texto-usuario");
+              
+                /* Deixamos o texto selecionado (em azul) */
+                textoCopiado.select();
+                textoCopiado.setSelectionRange(0, 99999); /* Para mobile */
+              
+                /* Copia o texto que está selecionado */
+                document.execCommand("copy");
+              
+                alert("Texto copiado: " + textoCopiado.value);
+              }
+            </script> 
+        </ul>
+        <footer>Produzido por Joelen Cruz</footer>
+    </div>
+</body>
+
+</html>
